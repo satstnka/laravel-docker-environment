@@ -15,6 +15,11 @@ brew install php
 brew install composer
 ```
 
+### node のインストール
+```
+brew install node
+```
+
 ## プロジェクト作成
 ```
 composer create-project --prefer-dist laravel/laravel [アプリケーション名]
@@ -39,7 +44,7 @@ DB_ROOT_PASSWORD=[rootパスワード]
 
 ### Docker コンテナ作成
 ```
-dokcer-compose up -d
+docker-compose up -d
 ```
 
 ## プロジェクト作成後の開発作業
@@ -73,5 +78,5 @@ DB_ROOT_PASSWORD=admin_pass
 
 3. コンテナ作成
 ```
-dokcer-compose up -d
+docker-compose up -d
 ```
