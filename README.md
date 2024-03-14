@@ -55,6 +55,23 @@ docker-compose up -d
 docker exec -it laravel-php /bin/bash
 ```
 
+### .env をアプリケーションフォルダーにコピー
+```
+cp .env [アプリケーション名]
+```
+
+### PHP コンポーネントに入って作業
+```
+docker exec -it laravel-php /bin/bash
+```
+#### コンポーネント内で叩くコマンド
+```
+a2enmod rewrite
+php artisan key:generate
+php artisan migrate
+```
+
+
 # 実行例
 1. test という名前の Laravel プロジェクトを作成
 ```
